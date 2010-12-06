@@ -25,9 +25,14 @@ extension to change the layout of the static pages.
     <% end %>
   </ul>
 
+== Fork goal
+
+Cut WYSIWYG editor for using pluggable editor (TODO: place-ext-link-here).
+
 == Installation
 
-1. Add `gem "spree_static_content"` to your Gemfile
+1. Add to your Gemfile
+   gem 'spree_static_content_plain',  :git => 'git://github.com/x2es/spree-static-content-plain.git'
 1. Run `bundle install`
-1. Run `rails g spree_static_content:install`
+1. Run `rails g spree_static_content_plain:install`
 1. Run `rake db:migrate`

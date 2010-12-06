@@ -14,13 +14,14 @@ require 'rake/rdoctask'
 require 'rake/packagetask'
 require 'rake/gempackagetask'
 
+# TODO: changes from x2es-fork-point not tested
 Jeweler::Tasks.new do |s|
-  s.name = "spree_static_content"
-  s.summary = "Extention to manage the static pages for your Spree shop."
+  s.name = "spree_static_content_plain"
+  s.summary = "Extention to manage the static pages for your Spree shop. (Without WYSIWYG editor)"
   s.description = s.summary
   #s.email = ""
-  s.homepage = "http://github.com/spree/spree-static-content"
-  s.authors = ["Peter Berkenbosch", "Roman Smirnov"]
+  s.homepage = "http://github.com/spree/spree-static-content-plain"
+  s.authors = ["Peter Berkenbosch", "Roman Smirnov", "x@ES"]
   s.add_dependency 'spree_core', ['>= 0.30.0.beta1']
   #s.has_rdoc = false
   #s.extra_rdoc_files = [ "README.rdoc"]
@@ -90,17 +91,17 @@ namespace :spec do
   end
 end
 
-desc 'Generate documentation for the static_content extension.'
+desc 'Generate documentation for the static_content_plain extension.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'StaticContentExtension'
+  rdoc.title    = 'StaticContentPlainExtension'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
 # For extensions that are in transition
-desc 'Test the static_content extension.'
+desc 'Test the static_content_plain extension.'
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.pattern = 'test/**/*_test.rb'

@@ -4,13 +4,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{spree_static_content}
+  s.name = %q{spree_static_content_plain}
   s.version = "0.30.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Peter Berkenbosch", "Roman Smirnov"]
+  s.authors = ["Peter Berkenbosch", "Roman Smirnov", "x@ES"]
   s.date = %q{2010-12-03}
-  s.description = %q{Extention to manage the static pages for your Spree shop.}
+  s.description = %q{Extention to manage the static pages for your Spree shop. (Without WYSIWYG-editor)}
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
      "config/locales/pt-BR.yml",
      "config/locales/ru-RU.yml",
      "config/routes.rb",
-     "lib/generators/spree_static_content/install_generator.rb",
+     "lib/generators/spree_static_content_plain/install_generator.rb",
      "lib/generators/templates/db/migrate/20081216193152_create_pages.rb",
      "lib/generators/templates/db/migrate/20090625125735_extend_pages.rb",
      "lib/generators/templates/db/migrate/20090814113100_add_visible_to_pages.rb",
@@ -109,20 +109,20 @@ Gem::Specification.new do |s|
      "lib/generators/templates/public/javascripts/wymeditor/skins/twopanels/skin.js",
      "lib/generators/templates/public/javascripts/wymeditor/skins/wymeditor_icon.png",
      "lib/generators/templates/public/stylesheets/static.css",
-     "lib/spree_static_content.rb",
-     "lib/spree_static_content_hooks.rb",
+     "lib/spree_static_content_plain.rb",
+     "lib/spree_static_content_plain_hooks.rb",
      "spec/controllers/admin/pages_controller_spec.rb",
      "spec/controllers/content_controller_spec.rb",
      "spec/models/page_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
-     "spree_static_content.gemspec"
+     "spree_static_content_plain.gemspec"
   ]
-  s.homepage = %q{http://github.com/spree/spree-static-content}
+  s.homepage = %q{http://github.com/spree/spree-static-content-plain}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
-  s.summary = %q{Extention to manage the static pages for your Spree shop.}
+  s.summary = %q{Extention to manage the static pages for your Spree shop. (Without WYSIWYG-editor)}
   s.test_files = [
     "spec/models/page_spec.rb",
      "spec/spec_helper.rb",

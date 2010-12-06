@@ -1,7 +1,7 @@
 require 'spree_core'
-require 'spree_static_content_hooks'
+require 'spree_static_content_plain_hooks'
 
-module SpreeStaticContent
+module SpreeStaticContentPlain
   class Engine < Rails::Engine
     def self.activate
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
